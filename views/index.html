@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My paint</title>
+	<link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+	<meta charset="utf-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="public/js/socket-event.js"></script>
+	<script src="public/js/socket.js"></script>
+	<script src="public/js/cookie.js"></script>
+	<script src="public/js/draw.js"></script>
+	<script src="public/js/utils.js"></script>
+</head>
+<body>
+<div id="container">
+		<h1>Paint what you want</h1>
+		<div id="content">
+			<div id="createRoom">Créer une salle</div>
+			<div id="room"></div>
+		</div>
+		<div id="draw">
+			<div id="leaveRoom">Quitter la salle</div>
+			<div id="tools">
+				<div id="brush" class="sprite0"></div>
+				<div id="line" class="sprite5"></div>
+				<div id="circle" class="sprite1"></div>
+				<div id="filledCircle" class="sprite3"></div>
+				<div id="rect" class="sprite6"></div>
+				<div id="filledRect" class="sprite4"></div>
+				<div id="eraser" class="sprite2"></div>
+			</div>
+			<div id="lineControl">
+				<label for="color">Couleur :</label>
+				<input id="color"value="#000000" type="color">
+				<label for="thickness">Epaisseur :</label>
+				<input id="thickness" type="range" min="1" max="20" value="5">
+			</div>
+			<div id="imageInput">
+				<label for="image">Insérer image :</label>
+				<input id="image" type="file" accept="image/*" data-type="image">
+				<div id="deleteImage">Supprimer l'image</div>
+			</div>
+				<a id="download">Télécharger le dessin</a>
+			<div id="canvasContainer">
+				<canvas id="canvas" width="1500" height="800"></canvas>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

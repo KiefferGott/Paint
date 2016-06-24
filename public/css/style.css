@@ -1,0 +1,72 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	height: 100%;
+}
+body {
+	background-color: #eee;
+}
+#container {
+	width: 1500px;
+	margin: auto;
+}
+#tools * {
+	display: inline-block;
+}
+#canvasContainer {
+	background-color: #fff;
+	height: 800px; 
+	width: 1500px;
+}
+h1 {
+	text-align: center;
+}
+canvas {
+	position: absolute;
+	height: 800px; 
+	width: 1500px;
+}
+#draw, #deleteImage {
+	display: none;
+}
+.sprite0 {
+height: 23px;
+width: 25px;
+background-position: -0px 0px;
+}
+.sprite1 {
+height: 22px;
+width: 25px;
+background-position: -25px 0px;
+}
+.sprite2 {
+height: 23px;
+width: 25px;
+background-position: -50px 0px;
+}
+.sprite3 {
+height: 22px;
+width: 25px;
+background-position: -75px 0px;
+}
+.sprite4 {
+height: 22px;
+width: 25px;
+background-position: -100px 0px;
+}
+.sprite5 {
+height: 23px;
+width: 25px;
+background-position: -125px 0px;
+}
+.sprite6 {
+height: 22px;
+width: 25px;
+background-position: -150px 0px;
+}
+.sprite0, .sprite1, .sprite2, .sprite3, .sprite4, .sprite5, .sprite6 {
+background-image: url("http://image.noelshack.com/fichiers/2016/13/1459136381-sprite.png");
+background-repeat: no-repeat;
+}

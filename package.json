@@ -1,0 +1,20 @@
+{
+  "name": "my_paint_try",
+  "version": "0.1.1",
+  "description": "nothing",
+  "dependencies": {
+    "socket.io": "^1.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git.heroku.com/desolate-hamlet-40274.git"
+  },
+  "scripts": {},
+  "engines": {
+    "node": "5.7.1"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "Kieffer"
+}
